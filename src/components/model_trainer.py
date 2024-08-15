@@ -106,7 +106,10 @@ class ModelTrainer:
             logging.info('Best model is found. Saving...')
             save_object(model, self.model_trainer_config.trained_model_path)
             logging.info('Model saved!')
+            
+            predicted = model.predict(X_test)
+            r2_square = r2_score(y_test,predicted)
 
-            return evaluation_report, model
+            return r2_square
         except Exception as e:
             raise CustomException(e, sys)
