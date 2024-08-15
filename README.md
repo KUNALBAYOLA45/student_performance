@@ -23,7 +23,7 @@ Dataset Source Link :
 
 # Animation of UI
 
-![HomepageUI](./screenshots/stdperformanceindicator.gif)
+![HomepageUI](.stdperformanceindicator.gif)
 
 # Project Development Approach
 
